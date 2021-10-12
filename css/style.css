@@ -306,6 +306,31 @@ img{
   border-radius: .5rem;
 }
 
+/* ===== Animation CV =====*/
+
+.zoom_img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.4s ease-in-out;
+  transform: scale(1);
+  will-change: transform;
+}
+.carte:hover .zoom_img {
+  transform: scale(1.3);
+}
+
+.carte:hover .zoom_img::before {
+  opacity: 0.3;
+}
+
+.carte {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
 /* ===== WORK =====*/
 .work__container{
   row-gap: 2rem;
