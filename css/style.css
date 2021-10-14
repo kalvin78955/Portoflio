@@ -308,6 +308,20 @@ img{
 
 /* ===== Animation CV =====*/
 
+.texte_anim{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(12rem, 95rem);
+  color: #ffffff;
+  font-size: 1.7em;
+  text-align: center;
+  font-weight: 700;
+  border:1px solid #1e3253;
+  background:#1e3253;
+  opacity:0.5;
+  border-radius: .5rem;
+}
 
 /*.zoom_img {
   width: 100%;
@@ -492,6 +506,15 @@ img{
     justify-items: center;
   }
 }
+
+
+@media screen and (max-width: 375px) {
+  .about__img img {
+    width: 156px;
+    border-radius: .5rem;
+  }
+}
+
 
 @media screen and (min-width: 1024px){
   .bd-grid{
